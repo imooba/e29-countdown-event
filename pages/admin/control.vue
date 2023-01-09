@@ -262,7 +262,7 @@ export default {
       this.$fire.database.ref('stage').on('value', (snapshot) => {
         const val = snapshot.val()
         this.state = val.state || 'wait'
-        const winner = val.winner
+        const winner = val.winner || {}
         this.winner.telno = winner.telno
         this.winner.name = winner.name
         this.candidateCount = val.candidates_count
