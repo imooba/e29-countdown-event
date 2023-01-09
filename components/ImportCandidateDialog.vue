@@ -142,7 +142,7 @@ export default {
           const count = texts[0].length
           this.headers = [...Array(count)].map((x, i) => 'col' + (Number(i) + 1))
         }
-        this.items = texts.map((x) => this.headers.reduce((list, y, i) => ({ ...list, [y]: x[i]}), {}))
+        this.items = texts.map((x) => this.headers.reduce((list, y, i) => ({ ...list, [y]: x[i]}), {})).filter((x) => !!x)
         this.mapping = [...Array(2)].map((x, i) => this.headers[i] || null)
         this.step += 1
       })
