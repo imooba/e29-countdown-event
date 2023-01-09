@@ -79,7 +79,7 @@ export default {
       this.$fire.database.ref('stage').on('value', (snapshot) => {
         const val = snapshot.val()
         this.state = val.state
-        const winner = val.winner
+        const winner = val.winner || {}
         this.winner = winner
 
         console.log(this.state)
