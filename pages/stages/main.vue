@@ -148,7 +148,7 @@ export default {
         this.onOffloadRegistrants(val.offline_version)
         if (!this.isSpinDevice) {
           this.state = val.state
-          const winner = val.winner
+          const winner = val.winner || {}
           this.winner = winner
 
           console.log(this.state)
