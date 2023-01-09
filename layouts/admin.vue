@@ -90,7 +90,7 @@ export default {
           key: 'menu-settings-stages-screen',
           text: 'Settings Main Screen',
           link: '/admin/settings/stages/screen',
-          icon: 'mdi-numeric-2-box-outline',
+          icon: 'mdi-numeric-3-box-outline',
         },
         {
           key: 'menu-divider-1',
