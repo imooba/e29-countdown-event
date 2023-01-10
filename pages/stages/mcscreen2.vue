@@ -255,7 +255,8 @@ export default {
     },
     onSpined() {
       // const telno = this.winner.telno.slice(0, -3) + 'xxx'
-      const codes = [...this.winner.telno.slice(0, -3).split('').map((x) => Number(x)), 10, 10, 10]
+      //const codes = [...this.winner.telno.slice(0, -3).split('').map((x) => Number(x)), 10, 10, 10]
+      const codes = [...this.winner.telno, 10, 10, 10]
       console.log(codes, this.$refs.slot_machine)
       setTimeout(() => {
         this.$refs.slot_machine && this.$refs.slot_machine.reset()
