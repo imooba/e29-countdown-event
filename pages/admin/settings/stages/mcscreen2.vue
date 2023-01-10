@@ -420,7 +420,7 @@ export default {
       try {
         this.loading = true
         const snapshot = await this.$fire.database
-          .ref('settings/stages/main')
+          .ref('settings/stages/mcscreen2')
           .once('value')
 
         const settings = snapshot.val() || {}
@@ -537,7 +537,7 @@ export default {
           this.settings.button.background.url = await imgSnapshot.ref.getDownloadURL()
           this.settings.button.background.path = imgSnapshot.metadata.fullPath
         }
-        await this.$fire.database.ref('settings/stages/main').update(this.settings)
+        await this.$fire.database.ref('settings/stages/mcscreen2').update(this.settings)
         this.snack.message = 'Saved'
         this.snack.color = 'success'
         this.snack.show = true
