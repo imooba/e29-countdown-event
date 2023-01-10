@@ -94,7 +94,7 @@ export default {
         },
         {
           key: 'menu-settings-stages-main',
-          text: 'Settings Random Screen',
+          text: 'Settings Random Screen 2',
           link: '/admin/settings/stages/mcscreen2',
           icon: 'mdi-numeric-4-box-outline',
         },
@@ -126,9 +126,9 @@ export default {
         },
         {
           key: 'menu-state-main',
-          text: 'Random Screen',
+          text: 'Random Screen 2',
           link: '/stages/mcscreen2',
-          icon: 'mdi-home-floor-4',
+          icon: 'mdi-home-floor-a',
         } 
       ]
     }
