@@ -93,6 +93,12 @@ export default {
           icon: 'mdi-numeric-3-box-outline',
         },
         {
+          key: 'menu-settings-stages-main',
+          text: 'Settings Random Screen',
+          link: '/admin/settings/stages/mcscreen2',
+          icon: 'mdi-numeric-4-box-outline',
+        },
+        {
           key: 'menu-divider-1',
           divider: true,
         },
@@ -117,7 +123,13 @@ export default {
           text: 'Main Screen',
           link: '/stages/screen',
           icon: 'mdi-home-floor-3'
-        }
+        },
+        {
+          key: 'menu-state-main',
+          text: 'Random Screen',
+          link: '/stages/mcscreen2',
+          icon: 'mdi-home-floor-4',
+        } 
       ]
     }
   }
