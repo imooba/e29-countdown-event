@@ -171,7 +171,7 @@ export default {
         this.winners = Object.keys(val).map((x) => val[x].telno)
       })
 
-      this.$fire.database.ref('settings/stages/main').on('value', this.loadSettings)
+      this.$fire.database.ref('settings/stages/mcscreen2').on('value', this.loadSettings)
     },
     loadSettings(snapshot) {
       try {
