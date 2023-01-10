@@ -19,7 +19,7 @@
           </div>
         </div>
         <div v-else class="screen-winner__content">
-          <div class="screen-winner--empty" :style="{ fontSize: (settings.content.name_size * 0.8) + 'px' }">รอประกาศผล</div>
+          <div class="screen-winner--empty" :style="{ fontSize: (settings.content.name_size * 0.8) + 'px', color: settings.content.phone_color }">รอประกาศผล</div>
         </div>
       </div>
       <v-spacer />
