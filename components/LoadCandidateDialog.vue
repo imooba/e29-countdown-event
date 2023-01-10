@@ -131,7 +131,7 @@ export default {
             },
             params,
           }
-          await this.$axios.$get('https://asia-southeast1-e29-countdown-evt.cloudfunctions.net/candidates', config)
+          await this.$axios.$get('https://asia-southeast1-luckydraw-e29.cloudfunctions.net/candidates', config)
         }
         console.log()
       } catch (error) {
